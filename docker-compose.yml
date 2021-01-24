@@ -1,0 +1,9 @@
+version: "3"
+services:
+  web:
+    image: node
+    entrypoint: "/home/game/start.sh"
+    volumes:
+     - "./source:/home/game"
+    ports:
+     - "3000:3000"
